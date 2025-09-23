@@ -1,0 +1,446 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='pages/Home/home.css') }}">
+{% endblock %}
+
+{% block body %}
+    <header id="Header" class="d-flex flex-column justify-content-center">
+        <i class="Toggle d-lg-none bi bi-list"></i>
+        <div class="Shadow d-lg-none"></div>
+
+        <nav id="NavMenu">
+          <ul>
+            <li><a href="#Hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+            <li><a href="#About"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+            <li><a href="#Skills"><i class="bi bi-check2-all navicon"></i><span>Skills</span></a></li>
+            <li><a href="#Resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+            <li><a href="#Portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+            <li><a href="#Recommendations"><i class="bi bi-people"></i><span>Recommendations</span></a></li>
+            <li><a href="https://github.com/NikolayKanchevski" target="_blank"><i class="bi bi-github"></i><span>GitHub</span></a></li>
+            <li><a href="https://www.linkedin.com/in/nkanchevski" target="_blank"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Hero">
+            <div class="Background">
+              <div class="Stars-1"></div>
+              <div class="Stars-2"></div>
+              <div class="Stars-3"></div>
+            </div>
+
+            <div class="container" data-aos="zoom-out">
+              <div class="row align-items-center gy-4 mx-xl-5 px-xl-3">
+                <div class="text-center col-lg-6 text-lg-end order-lg-last">
+                  <img src="{{ url_for('static', filename='assets/pic.png') }}" alt="PersonalPhoto" class="Photo img-fluid">
+                </div>
+                <div class="text-center col-lg-6 text-lg-start">
+                    <div class="d-inline-flex">
+                        <h1 class="Title">Nikolay Kanchevski</h1>
+                        <span class="fi fi-bg ms-3 d-none d-lg-block" data-toggle="tooltip" data-placement="top" title="Bulgaria"></span>
+                    </div>
+                    <p class="Subtitle">I'm a <span class="typed" data-typed-items="Game Developer, Graphics Engineer, Cross-Platform Developer, Low-level Programmer, Web Developer"></span><span class="typed-cursor typed-cursor-blink" aria-hidden="true"></span></p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="About">
+            <div class="Heading" data-aos="fade-up">
+                <h2>About</h2>
+                <p>I’m Nikolay, a curious and driven developer who enjoys exploring how things work under the hood. I love solving complex problems and turning ideas into tangible results, whether it’s through coding, tinkering with new technologies, or learning something new every day. While I specialize in graphics and engine development, my primary focus is on growth, creativity, and continually challenging myself to improve both technically and personally.</p>
+            </div>
+            <div class="Card row row-gap-4 py-3 align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center col-lg-3 col-xl-2 col-xxl-1 offset-xxl-1">
+                  <img src="{{ url_for('static', filename='assets/pic.png') }}" alt="PersonalPhoto" class="Photo img-fluid">
+                </div>
+                <div class="row col-lg-9 col-xl-10 col-xxl-8 offset-xxl-1">
+                    <ul class="list-unstyled row g-1 m-0 align-items-center justify-content-center justify-content-lg-evenly">
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Name:</h5>
+                                <p>Nikolay Kanchevski</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Age:</h5>
+                                <p>18 years old</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Email:</h5>
+                                <a href="mailto:n.kanchevski@gmail.com">n.kanchevski@gmail.com</a>
+                            </div>
+                        </li>
+                        <div class="Spacer col-12 d-md-none"></div>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Location:</h5>
+                                <span class="flag fi fi-bg" data-toggle="tooltip" data-placement="top" title="Bulgaria"></span>
+                                <a href="https://maps.app.goo.gl/7e6RMz6DDJ9PMeT7A" target="_blank">Veliko Tarnovo, BG</a>
+                            </div>
+                        </li>
+                        <div class="Spacer col-12 d-none d-md-block d-xl-none"></div>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Study:</h5>
+                                <span class="flag fi fi-bg" data-toggle="tooltip" data-placement="top" title="Bulgaria"></span>
+                                <a href="https://ac-arcus.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="American College &quot;Arcus&quot;">Arcus College</a>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Phone:</h5>
+                                <span class="flag fi fi-bg" data-toggle="tooltip" data-placement="top" title="Bulgaria"></span>
+                                <a href="tel:+359879422127">+359 879422127</a>
+                            </div>
+                        </li>
+                        <div class="Spacer col-12 d-md-none"></div>
+                        <div class="Spacer col-12 d-none d-xl-block"></div>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Availability:</h5>
+                                <p>Open to opportunities</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Languages:</h5>
+                                <p class="d-none me-2 d-xl-block">BG</p>
+                                <span class="flag fi fi-bg" data-toggle="tooltip" data-placement="top" title="Bulgarian"></span>
+                                <p class="me-2">/</p>
+                                <p class="d-none me-2 d-xl-block">EN</p>
+                                <span class="flag fi fi-gb" data-toggle="tooltip" data-placement="top" title="English"></span>
+                            </div>
+                        </li>
+                        <div class="Spacer col-12 d-none d-md-block d-xl-none"></div>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Time Zone:</h5>
+                                <p>EET / UTC+02:00</p>
+                            </div>
+                        </li>
+                        <div class="Spacer col-12 d-md-none"></div>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Expertise:</h5>
+                                <p>C++ / <a href="https://www.vulkan.org" target="_blank">Vulkan</a></p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Working on:</h5>
+                                <a href="https://github.com/NikolayKanchevski/SierraEngine/tree/dev" target="_blank">Sierra Engine</a>
+                            </div>
+                        </li>
+                        <li class="col-12 col-md-5 col-xl-4">
+                            <div class="Note">
+                                <h5><i class="bi bi-chevron-right"></i>Sleep:</h5>
+                                <p>Not applicable</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Stats row row-gap-4 align-items-center justify-content-evenly" data-aos="fade-up" data-aos-delay="100">
+                <div class="Stat d-grid row-gap-3 col-6 col-lg-3">
+                    <i class="bi bi-clock-history"></i>
+                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"></h2>
+                    <p>Years of Enthusiasm</p>
+                </div>
+                <div class="Stat d-grid row-gap-3 col-6 col-lg-3">
+                    <i class="bi bi-braces"></i>
+                    <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1200000" data-purecounter-duration="1"></h2>
+                    <p>Lines of Code</p>
+                </div>
+                <div class="Stat d-grid row-gap-3 col-6 col-lg-3">
+                    <i class="bi bi-wrench"></i>
+                    <div class="glitch-wrapper">
+                       <h2 class="glitch purecounter" data-glitch="glitch" data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1">glitch</h2>
+                    </div>
+                    <p>Bugs Fixed</p>
+                </div>
+                <div class="Stat d-grid row-gap-3 col-6 col-lg-3">
+                    <i class="bi bi-bug"></i>
+                    <h2 class="purecounter" data-purecounter-start="256" data-purecounter-end="999999999999999999" data-purecounter-duration="1500000000000000000"></h2>
+                    <p>Bugs Created</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <div class="Heading" data-aos="fade-up">
+                <h2>Skills</h2>
+                <p>I have developed expertise across a wide range of tools, technologies, and programming languages. These skills allow me to tackle complex projects in graphics, engine development, and software engineering efficiently and effectively.</p>
+            </div>
+
+            <div class="d-grid row-gap-4" data-aos="fade-up" data-aos-delay="100">
+                {% for collection in skillManager.collections %}
+                    <div class="Tab skills-animation">
+                        <a class="Dropdown" data-bs-toggle="collapse" href="#SkillCollection{{ loop.index0 }}TabCollapse" role="button" aria-expanded="{{ 'true' if loop.first else 'false' }}"><span class="bi bi-chevron-right"></span> </a>
+                        <h3 class="Title">{{ collection.name }}</h3>
+                        <div id="SkillCollection{{ loop.index0 }}TabCollapse" class="collapse {{ 'show' if loop.first else '' }}">
+                            <div class="row pt-4 row-gap-4">
+                                {% for skill in collection.skills %}
+                                    <div class="col-md-6">
+                                        <div class="Skill">
+                                            <div class="Description row">
+                                                <div class="col-4 text-start">
+                                                    <h5>{{ skill.name }}</h5>
+                                                </div>
+                                                <div class="col-4 text-center">
+                                                    <a href="{{ skill.website or '#' }}" target="_blank" class="Icon">
+                                                        <img src="{{ skill.icon }}" alt="{{ skill.name }} Icon"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-4 text-end">
+                                                    <h5>{{ skill.percentage }}%</h5>
+                                                </div>
+                                            </div>
+                                            <div class="ProgressBox">
+                                                <div class="Progress" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section id="Resume">
+            <div class="Heading" data-aos="fade-up">
+                <h2>Resume</h2>
+                <p>This timeline highlights my academic and professional journey, illustrating the key milestones, projects, and experiences that have shaped my skills and expertise over time.</p>
+            </div>
+
+            <div class="History row p-2 p-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="Story col-lg-6">
+                    <h3 class="Title mt-0">Professional Experience</h3>
+                    <div class="Item">
+                        <p class="Subtitle">Intern .NET Machine Learning Researcher</p>
+                        <h6 class="Date">2024</h6>
+                        <p><em>At <a href="https://lexoro.ai/" target="_blank">Lexoro</a> LLC, Veliko Tarnovo, Bulgaria</em></p>
+                        <p>During my time at a confidential project, I worked on developing a machine learning system using <a href="https://dotnet.microsoft.com/en-us/apps/ai/ml-dotnet" target="_blank">ML.NET</a>. Key contributions included:</p>
+                         <ul>
+                             <li><i class="bi bi-chevron-right"></i>Designing and implementing parsers capable of efficiently handling over 1.5 gigabytes of raw data, transforming it into structured formats for analysis</li>
+                             <li><i class="bi bi-chevron-right"></i>Building and training an AI model to evaluate and rank medical articles based on relevance and user-specific interests, whist ensuring careful handling of sensitive information</li>
+                             <li><i class="bi bi-chevron-right"></i>Achieving a 93% accuracy rate, demonstrating the effectiveness of the preprocessing pipeline</li>
+                        </ul>
+                        <p>This project showcased my ability to combine research, development, and practical AI implementation from scratch in a high-stakes environment</p>
+                    </div>
+                    <div class="Item">
+                        <p class="Subtitle">Intern Full-Stack Web Developer</p>
+                        <h6 class="Date">2022</h6>
+                        <p><em>At <a href="https://uiventures.com/" target="_blank">Urbаn Impаct Venturеs</a> LLC, Sofia, Bulgaria</em></p>
+                        <p>I developed a web platform that allowed companies to enter their ESG (Environmental, Social, and Governance) and SDG (Sustainable Development Goals) criteria across structured categories, enabling their data to be evaluated and rated.</p>
+                         <ul class="pb-4">
+                             <li><i class="bi bi-chevron-right"></i>Built a clear and intuitive interface to ensure companies could easily input sustainability data</li>
+                             <li><i class="bi bi-chevron-right"></i>Implemented the backend logic in PHP to process and validate submissions efficiently</li>
+                             <li><i class="bi bi-chevron-right"></i>Designed and maintained a MySQL database to securely store and organize structured sustainability information</li>
+                             <li><i class="bi bi-chevron-right"></i>Structured the system for scalability, enabling consistent evaluation and meaningful comparison between organizations</li>
+                             <li><i class="bi bi-chevron-right"></i>Delivered a platform that streamlined sustainability data collection and provided actionable insights, ultimately improving transparency and helping stakeholders make more informed decisions</li>
+                        </ul>
+                    </div>
+                    <div class="Item">
+                        <p class="Subtitle">Unity Asset Store Freelance Developer</p>
+                        <h6 class="Date">2022</h6>
+                        <p>I independently designed and published two assets on the <a href="https://assetstore.unity.com/" target="_blank">Unity Asset Store</a>, which I am maintaining to this very day:</p>
+                         <ul>
+                             <li><i class="bi bi-chevron-right"></i>Ultimate AI System: A comprehensive AI framework enabling developers to implement advanced behaviors such as pathfinding, enemy NPC AI, and action systems with minimal coding. This asset streamlines the integration of complex AI functionalities into Unity projects. It has received professional reviews praising its flexibility and ease of use, and holds a 4.5-star average rating.</li>
+                             <li><i class="bi bi-chevron-right"></i>Ultimate Inventory Engine: A versatile inventory system supporting features like item stacking, drag-and-drop functionality, and save/load capabilities. It provides a robust foundation for developers seeking to implement comprehensive inventory systems in their games. This asset has received positive professional feedback for its modularity and reliability, and holds a 5.0-star average rating.</li>
+                        </ul>
+                        <p class="pb-4">Both assets have been well-received by the Unity developer community, reflecting their quality, utility, and professional standards.</p>
+                    </div>
+
+                    <h3 class="Title">Education</h3>
+                    <div class="Item">
+                        <p class="Subtitle">Software & Hardware Engineering</p>
+                        <h6 class="Date">2021 - {{ __DATE__.year }} (Present)</h6>
+                        <p><em>At <a href="https://ac-arcus.com/" target="_blank">Arcus</a> Private American College, Veliko Tarnovo, Bulgaria</em></p>
+                        <p>I am a student in the Software & Hardware Sciences profile, which provides a foundation directly relevant to my development work:</p>
+                        <ul>
+                             <li><i class="bi bi-chevron-right"></i>Exposure to multiple programming paradigms and computer systems strengthens both my software and hardware understanding</li>
+                             <li><i class="bi bi-chevron-right"></i>Rigorous coursework sharpens my analytical skills and structured problem-solving approach</li>
+                             <li><i class="bi bi-chevron-right"></i>The combination of software and hardware perspectives helps me design efficient, well-rounded technical solutions</li>
+                             <li><i class="bi bi-chevron-right"></i>The program instills habits of precision, responsibility, and adaptability—qualities I apply in my development projects</li>
+                        </ul>
+
+                        <p class="Subtitle">Other Learning</p>
+                        <h6 class="Date">2007 - {{ __DATE__.year }} (Present)</h6>
+                        <p><em>Expanding skills, sharing knowledge, and growing through courses and collaboration</em></p>
+                        <p>I actively pursue continuous learning and skill development through various courses and community engagement. I have completed online courses in shader programming, game mathematics, and ethical hacking, and I have participated in a hands-on Python, Flask, and Bootstrap web development course. I am also involved in multiple programming communities, where I actively exchange knowledge, learn from peers, and mentor others, fostering both personal growth and collaborative learning.</p>
+                    </div>
+                </div>
+                <div class="Story col-lg-6 pb-2 pb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="Title mt-4 mt-lg-0">Competitive Experience</h3>
+                    <div class="Item">
+                        <p class="Subtitle">1st Place at Logos Award 2023 by <a href="https://lexoro.ai/" target="_blank">Lexoro</a></p>
+                        <h6 class="Date">2023</h6>
+                        <p><em>9th Grade, <a href="https://ac-arcus.com/">Arcus</a> Private American College, Veliko Tarnovo, Bulgaria</em></p>
+                        <p>I was awarded first place in the annual Logos Award organized by Lexoro, recognizing the most creative software project by a high school student. Competing against students from across Bulgaria in grades 8–12, I was one of the youngest participants, which underscores the scale and significance of this achievement. My project, the <a href="https://github.com/NikolayKanchevski/SierraEngine/tree/dev" target="_blank">Sierra Engine</a>, is a modern cross-platform rendering engine built in C++20, leveraging the <a href="https://www.vulkan.org" target="_blank">Vulkan</a> and <a href="https://developer.apple.com/metal" target="_blank">Metal</a> APIs for high-performance graphics. It supports Windows, macOS, Linux, Android, and iOS, with future plans for additional native APIs and console support. The engine integrates multiple graphics-intensive features, providing a complete development kit for games and 3D applications.</p>
+                         <ul>
+                             <li><i class="bi bi-chevron-right"></i>Independently designed and implemented a full-featured rendering engine from scratch, including graphics architecture, rendering pipelines, and platform abstraction layers</li>
+                             <li><i class="bi bi-chevron-right"></i>Utilized <a href="https://www.vulkan.org" target="_blank">Vulkan</a> and <a href="https://developer.apple.com/metal" target="_blank">Metal</a> APIs to achieve high-performance graphics on multiple platforms</li>
+                             <li><i class="bi bi-chevron-right"></i>Ensured cross-platform compatibility across desktop and mobile operating systems, demonstrating advanced software engineering skills</li>
+                             <li><i class="bi bi-chevron-right"></i>Competed nationally with no restrictions on programming language or technology, achieving top evaluation in innovation, implementation quality, impact, and presentation</li>
+                             <li><i class="bi bi-chevron-right"></i>Awarded a certificate, custom plaque, and a year-long scholarship, and gained recognition for early technical excellence and creativity</li>
+                        </ul>
+                        <p>Following the award, I was personally invited to re-present the engine to the CEOs of <a href="https://lexoro.ai/" target="_blank">Lexoro</a>’s German headquarters, delivering the presentation entirely in English. This experience further strengthened my professional communication skills and allowed me to explain complex technical concepts clearly to international industry leaders.</p>
+                    </div>
+                    <div class="Item">
+                        <p class="Subtitle">3rd Place at National High School Programming Contest by Prosveta (Гимназист-програмист)</p>
+                        <h6 class="Date">2022</h6>
+                        <p><em>8th Grade, <a href="https://ac-arcus.com/" target="_blank">Arcus</a> Private American College, Veliko Tarnovo, Bulgaria</em></p>
+                        <p>I secured third place in Bulgaria's premier high school programming competition, organized by <a href="https://www.prosveta.bg">Prosveta Publishing Group</a> (Bulgaria's leading educational publisher). The contest attracted many participants from across the country, including students from grades 8 to 12. As an 8th grader, I was among the youngest competitors, which underscores the significance of this accomplishment.</p>
+                         <ul>
+                             <li><i class="bi bi-chevron-right"></i>Competed against high school students from grades 8 to 12 nationwide, demonstrating strong skills despite being one of the youngest participants</li>
+                             <li><i class="bi bi-chevron-right"></i>Developed an educational game for 2nd-grade students, focusing on mathematics or Bulgarian language, aligning with the contest’s theme</li>
+                             <li><i class="bi bi-chevron-right"></i>Awarded a monetary prize, a certificate and a one-year free subscription to the e-Prosveta educational platform</li>
+                             <li><i class="bi bi-chevron-right"></i>Featured in national and regional media outlets</li>
+                        </ul>
+                        <p class="pb-4">This accomplishment showcases my ability to excel in competitive environments and highlights my early aptitude in programming and problem-solving.</p>
+                    </div>
+
+                    <h3 class="Title">Past and Personal Hobby Work</h3>
+                    <div class="Item">
+                        <p class="Subtitle">Exploring, creating, and innovating across software, games, and design in my free time</p>
+                        <h6 class="Date">2007 - {{ __DATE__.year }} (Present)</h6>
+                        <p>I have always actively pursued a wide range of personal projects that enhance my skills and fuel my passion for software development, such as:</p>
+                         <ul>
+                             <li><i class="bi bi-chevron-right"></i>Continuing development of the Sierra Engine, a cross-platform game engine, in my free time</li>
+                             <li><i class="bi bi-chevron-right"></i>Creating iOS applications and websites/services, handling both frontend and backend with .NET, Flask, Bootstrap, HTML, CSS, JavaScript, and various databases</li>
+                             <li><i class="bi bi-chevron-right"></i>Developing Python quality-of-life programs to automate tasks and improve efficiency</li>
+                             <li><i class="bi bi-chevron-right"></i>Exploring game development in Unity, creating smaller projects alongside Sierra Engine</li>
+                             <li><i class="bi bi-chevron-right"></i>Building Discord bots to enhance community interactions and automate processes</li>
+                             <li><i class="bi bi-chevron-right"></i>Designing personal logos and UI/UX projects, combining creativity with technical skills</li>
+                             <li><i class="bi bi-chevron-right"></i>Conducting constant research and staying enthusiastic about new technologies, frameworks, and best practices</li>
+                        </ul>
+                        <p class="pb-2">These projects reflect my versatility, creativity, and continuous dedication to improving as a developer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Portfolio">
+            <div class="Heading" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>This portfolio highlights a selection of my projects, illustrating both the creative process and the final results. Each example reflects my technical skills, problem-solving approach, and commitment to quality from concept to completion.</p>
+            </div>
+
+            <div class="Items">
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="random">
+                    <div class="Filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <button data-filter="*" class="active">All</button>
+                        {% for collection in itemManager.collections %}
+                            <button data-filter=".{{ collection.filter }}">{{ collection.name }}</button>
+                        {% endfor %}
+                    </div>
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                        {% for filter, item in itemManager.get_items() %}
+                            <div class="Item col-md-3 col-lg-4 isotope-item {{ filter }}">
+                                <a href="{{ url_for('static', filename=item.image) }}" class="glightbox preview-link"
+                                   data-type="image" data-effect="fade"
+                                   data-title="<h2>{{ item.title }}</h2>"
+                                   data-description="<p style=&quot;font-size: 1.1rem;&quot;>{{ item.description }}</p>"
+                                   data-gallery="{{ filter }}-gallery" data-zoomable="true"
+                                >
+                                    <img src="{{ url_for('static', filename=item.image) }}" alt="Item Image" class="img-fluid">
+                                    <div class="Content">
+                                        <h4>{{ item.title }}</h4>
+                                        <p>{{ item.description }}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Recommendations">
+            <div class="Heading" data-aos="fade-up">
+                <h2>Recommendations</h2>
+                <p>This section features recommendations from colleagues and collaborators, offering insights into my technical expertise, problem-solving abilities, and professional approach.</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                        {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                                "delay": 5000
+                            },
+                            "slidesPerView": "auto",
+                            "pagination": {
+                                "el": ".swiper-pagination",
+                                "type": "bullets",
+                                "clickable": true
+                            }
+                        }
+                    </script>
+                    <div class="swiper-wrapper">
+                        {% for recommendation in recommendationManager.recommendations %}
+                            <div class="swiper-slide">
+                                <div class="Recommendation">
+                                    <div class="row gy-4 justify-content-center">
+                                        <div class="col-8 col-md-4 col-lg-2 p-2 text-center order-md-last">
+                                            <img src="{{ url_for('static', filename=recommendation.image) }}" class="Image img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="Content">
+                                                <p>
+                                                    <i class="QuoteLeft bi bi-quote"></i>
+                                                    <span>{{ recommendation.text }}</span>
+                                                    <i class="QuoteRight bi bi-quote"></i>
+                                                </p>
+                                                <h3 class="Name">{{ recommendation.name }}</h3>
+                                                <h4 class="Occupation">{{ recommendation.occupation }}</h4>
+                                                <div class="Stars">
+                                                    {% for i in range(recommendation.star_count) %}
+                                                        <i class="bi bi-star-fill"></i>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="d-grid gap-2">
+            <h2>Nikolay Kanchevski</h2>
+            <p class="fst-italic">Feel free to connect with me across these platforms to follow my work, share ideas, or collaborate on projects.</p>
+            <div class="Socials d-inline-flex gap-2 justify-content-center">
+                <a href="mailto:n.kanchevski@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+                <a href="https://github.com/NikolayKanchevski"><i class="bi bi-github"></i></a>
+                <a href="https://discord.com/users/624300601500631053"><i class="bi bi-discord"></i></a>
+                <a href="https://www.linkedin.com/in/nkanchevski"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="Credits mt-5">Made with <i class="bi bi-heart mx-1"></i> by Nikolay Kanchevski</p>
+        </div>
+    </footer>
+
+    <a href="#" id="ScrollTop"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="Preloader"></div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{{ url_for('static', filename='pages/Home/home.js') }}"></script>
+{% endblock %}

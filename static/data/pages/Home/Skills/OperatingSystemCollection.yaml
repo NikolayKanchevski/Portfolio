@@ -1,0 +1,37 @@
+name: "Operating Systems"
+skills:
+  - name: Windows
+    icon: https://www.svgrepo.com/show/303223/microsoft-windows-22-logo.svg
+    percentage: 80
+    tooltip: ""
+    website: https://www.microsoft.com/windows
+
+  - name: macOS
+    icon: https://cdn.simpleicons.org/macos/white
+    percentage: 90
+    tooltip: ""
+    website: https://www.apple.com/macos
+
+  - name: Manjaro Linux
+    icon: https://cdn.simpleicons.org/manjaro
+    percentage: 95
+    tooltip: ""
+    website: https://manjaro.org
+
+  - name: Kali Linux
+    icon: https://cdn.simpleicons.org/kalilinux
+    percentage: 40
+    tooltip: ""
+    website: https://www.kali.org
+
+  - name: Android
+    icon: https://cdn.simpleicons.org/android
+    percentage: 75
+    tooltip: ""
+    website: https://www.android.com
+
+  - name: iOS
+    icon: https://cdn.simpleicons.org/iOS/white
+    percentage: 90
+    tooltip: ""
+    website: https://www.apple.com/ios

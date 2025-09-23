@@ -1,0 +1,13 @@
+name: "Languages"
+skills:
+  - name: Bulgarian
+    icon: "https://flagicons.lipis.dev/flags/4x3/bg.svg"
+    percentage: 100
+    tooltip: ""
+    website: ""
+
+  - name: English
+    icon: "https://flagicons.lipis.dev/flags/4x3/gb.svg"
+    percentage: 95
+    tooltip: ""
+    website: ""

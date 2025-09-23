@@ -1,0 +1,6 @@
+recommendations:
+  - name: "Urbаn Impаct Venturеs"
+    occupation: "LLC Company"
+    image: "assets/pages/Home/Recommendations/UrbanImpactVenturesLogo.jpeg"
+    text: "The platform provided a simple yet powerful proof of concept that clearly demonstrated the value of our idea. Its intuitive interface and core functionality allowed us to validate key assumptions quickly and gather essential user feedback. Building on this foundation, we were able to develop a robust MVP that addressed real user needs and set the stage for future growth. The proof of concept was instrumental in shaping our product vision and accelerating our development process."
+    star_count: 5

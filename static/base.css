@@ -1,0 +1,150 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: red;
+    --accent-color: red;
+    --background-color: red;
+    --border-color: red;
+    --contrast-color: red;
+    --theme-color: red;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #FFA500FF;
+    --accent-color: #C3C3C5FF;
+    --background-color: #151516FF;
+    --border-color: #3E3E3EFF;
+    --contrast-color: #FFFFFF;
+    --theme-color: #000000FF;
+  }
+}
+/* --- BREAKPOINTS --- */
+/* --- DIMENSIONS --- */
+/* --- Colors --- */
+/* --- FONTS --- */
+@font-face {
+  font-family: "Marsden";
+  src: url(/static/assets/fonts/Marsden.ttf);
+}
+@font-face {
+  font-family: "Articulat";
+  src: url(/static/assets/fonts/Articulat.otf);
+}
+@font-face {
+  font-family: "Articulat-Medium";
+  src: url(/static/assets/fonts/Articulat-Medium.otf);
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(/static/assets/fonts/JetBrainsMono.ttf);
+}
+/* --- STYLES --- */
+/* --- TRANSITIONS --- */
+/* --- STYLES --- */
+:root {
+  scroll-behavior: smooth;
+}
+
+*,
+html,
+body,
+span,
+div,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  zoom: 100%;
+  border: none;
+  text-decoration: none !important;
+}
+*:not(input),
+html:not(input),
+body:not(input),
+span:not(input),
+div:not(input),
+p:not(input),
+a:not(input),
+h1:not(input),
+h2:not(input),
+h3:not(input),
+h4:not(input),
+h5:not(input),
+h6:not(input) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.34rem, 5.36vw, 2.35rem);
+}
+
+h3 {
+  font-size: clamp(0.8978rem, 8vw, 1.57115rem);
+}
+
+h4 {
+  font-size: clamp(0.71824rem, 8vw, 1.25692rem);
+}
+
+h5,
+button {
+  font-size: clamp(0.57459rem, 8vw, 1.00554rem);
+}
+
+h6 {
+  font-size: clamp(0.45967rem, 8vw, 0.80443rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Marsden", sans-serif;
+  color: var(--contrast-color);
+}
+
+p,
+li {
+  font-family: "Articulat", sans-serif;
+  color: var(--accent-color);
+}
+
+a {
+  font-family: "Articulat", sans-serif;
+  color: var(--primary-color);
+}
+a:hover {
+  text-decoration: underline !important;
+}
+
+button {
+  border-radius: 1rem;
+}
+
+.debug {
+  background-color: red !important;
+}
+
+/*# sourceMappingURL=base.css.map */

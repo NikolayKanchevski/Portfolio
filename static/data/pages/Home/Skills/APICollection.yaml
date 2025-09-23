@@ -1,0 +1,67 @@
+name: "APIs"
+skills:
+  - name: Vulkan
+    icon: https://cdn.simpleicons.org/vulkan
+    percentage: 80
+    tooltip: ""
+    website: https://www.khronos.org/vulkan/
+
+  - name: Metal
+    icon: https://upload.wikimedia.org/wikipedia/commons/5/5e/Apple_Metal_logo%2C_version_2.svg
+    percentage: 75
+    tooltip: ""
+    website: https://developer.apple.com/metal/
+
+  - name: OpenGL
+    icon: https://cdn.simpleicons.org/opengl
+    percentage: 85
+    tooltip: ""
+    website: https://www.khronos.org/opengl/
+
+  - name: Flask
+    icon: https://cdn.simpleicons.org/flask
+    percentage: 40
+    tooltip: ""
+    website: https://flask.palletsprojects.com/
+
+  - name: ASP.NET
+    icon: https://cdn.simpleicons.org/dotnet
+    percentage: 55
+    tooltip: ""
+    website: https://dotnet.microsoft.com/apps/aspnet
+
+  - name: Avalonia
+    icon: https://cdn.simpleicons.org/avaloniaui
+    percentage: 60
+    tooltip: ""
+    website: https://avaloniaui.net/
+
+  - name: ML.NET
+    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
+    percentage: 30
+    tooltip: ""
+    website: https://dotnet.microsoft.com/en-us/apps/ai/ml-dotnet
+
+  - name: OpenXML
+    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
+    percentage: 50
+    tooltip: ""
+    website: https://openxmlsdk.org/
+
+  - name: Apple
+    icon: https://cdn.simpleicons.org/apple/white
+    percentage: 70
+    tooltip: ""
+    website: https://www.apple.com
+
+  - name: Steamworks
+    icon: https://cdn.simpleicons.org/steamworks/white
+    percentage: 60
+    tooltip: ""
+    website: https://partner.steamgames.com/
+
+  - name: Discord API
+    icon: https://cdn.simpleicons.org/discord
+    percentage: 70
+    tooltip: ""
+    website: https://discord.com/developers

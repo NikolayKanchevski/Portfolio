@@ -1,0 +1,49 @@
+name: "Web Technologies"
+skills:
+  - name: HTML
+    icon: https://cdn.simpleicons.org/html5
+    percentage: 80
+    tooltip: ""
+    website: https://developer.mozilla.org/en-US/docs/Web/HTML
+
+  - name: CSS
+    icon: https://cdn.simpleicons.org/css
+    percentage: 80
+    tooltip: ""
+    website: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+  - name: SCSS
+    icon: https://cdn.simpleicons.org/sass
+    percentage: 70
+    tooltip: ""
+    website: https://sass-lang.com
+
+  - name: Web JavaScript
+    icon: https://cdn.simpleicons.org/javascript
+    percentage: 75
+    tooltip: ""
+    website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+  - name: Bootstrap
+    icon: https://cdn.simpleicons.org/bootstrap
+    percentage: 65
+    tooltip: ""
+    website: https://getbootstrap.com
+
+  - name: cPanel
+    icon: https://cdn.simpleicons.org/cpanel
+    percentage: 60
+    tooltip: ""
+    website: https://cpanel.net/
+
+  - name: phpMyAdmin
+    icon: https://cdn.simpleicons.org/phpmyadmin
+    percentage: 50
+    tooltip: ""
+    website: https://www.phpmyadmin.net
+
+  - name: SuperHosting
+    icon: https://www.superhosting.bg/favicon.ico
+    percentage: 45
+    tooltip: ""
+    website: https://www.superhosting.bg

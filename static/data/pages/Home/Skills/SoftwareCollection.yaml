@@ -1,0 +1,97 @@
+name: "Software"
+skills:
+  - name: Unity
+    icon: https://cdn.simpleicons.org/unity
+    percentage: 80
+    tooltip: ""
+    website: https://unity.com
+
+  - name: Unreal Engine
+    icon: https://cdn.simpleicons.org/unrealengine/white
+    percentage: 75
+    tooltip: ""
+    website: https://www.unrealengine.com
+
+  - name: Xcode
+    icon: https://developer.apple.com/assets/elements/icons/xcode/xcode-128x128.png
+    percentage: 85
+    tooltip: ""
+    website: https://developer.apple.com/xcode/
+
+  - name: CLion
+    icon: https://resources.jetbrains.com/storage/products/clion/img/meta/clion_logo_300x300.png
+    percentage: 85
+    tooltip: ""
+    website: https://www.jetbrains.com/clion/
+
+  - name: Rider
+    icon: https://resources.jetbrains.com/storage/products/rider/img/meta/rider_logo_300x300.png
+    percentage: 70
+    tooltip: ""
+    website: https://www.jetbrains.com/rider/
+
+  - name: Android Studio
+    icon: https://cdn.simpleicons.org/androidstudio
+    percentage: 85
+    tooltip: ""
+    website: https://developer.android.com/studio
+
+  - name: IntelliJ IDEA
+    icon: https://cdn.simpleicons.org/intellijidea
+    percentage: 80
+    tooltip: ""
+    website: https://www.jetbrains.com/idea/
+
+  - name: PyCharm
+    icon: https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png
+    percentage: 70
+    tooltip: ""
+    website: https://www.jetbrains.com/pycharm/
+
+  - name: Visual Studio
+    icon: https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg
+    percentage: 85
+    tooltip: ""
+    website: https://visualstudio.microsoft.com/
+
+  - name: Visual Studio Code
+    icon: https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg
+    percentage: 95
+    tooltip: ""
+    website: https://code.visualstudio.com/
+
+  - name: Photoshop
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1024px-Adobe_Photoshop_CC_icon.svg.png?20200616073617
+    percentage: 60
+    tooltip: ""
+    website: https://www.adobe.com/products/photoshop.html
+
+  - name: Premiere Pro
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1024px-Adobe_Premiere_Pro_CC_icon.svg.png?20210729021549
+    percentage: 55
+    tooltip: ""
+    website: https://www.adobe.com/products/premiere.html
+
+  - name: After Effects
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1024px-Adobe_After_Effects_CC_icon.svg.png?20210519030120
+    percentage: 50
+    tooltip: ""
+    website: https://www.adobe.com/products/aftereffects.html
+
+  - name: Illustrator
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1024px-Adobe_Illustrator_CC_icon.svg.png?20220814183839
+    percentage: 55
+    tooltip: ""
+    website: https://www.adobe.com/products/illustrator.html
+
+  - name: Audition
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Audition_CC_icon_%282020%29.svg/1024px-Adobe_Audition_CC_icon_%282020%29.svg.png?20200616120744
+    percentage: 40
+    tooltip: ""
+    website: https://www.adobe.com/products/audition.html
+
+  - name: Blender
+    icon: https://cdn.simpleicons.org/blender
+    percentage: 70
+    tooltip: ""
+    website: https://www.blender.org/

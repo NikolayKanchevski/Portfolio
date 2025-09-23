@@ -1,0 +1,11 @@
+name: "Cooking App"
+items:
+  - title: "Cooking App Logomark"
+    description: "Vector logo I designed on a cooking thematic."
+    image: "assets/pages/Home/CookingApp/Logo.svg"
+  - title: "Sign-Up — Personal Details (Light & Dark)"
+    description: "Create-account screen for first/last name and gender. Big, readable type; clear progress dots; forward arrow CTA; sized tap targets for accessibility across themes."
+    image: "assets/pages/Home/CookingApp/SignUp.png"
+  - title: "Policies & Consent — Egg-themed Toggles (Light & Dark)"
+    description: "Privacy Policy and Terms switches with inline help. ‘Sign up’ stays disabled until both are accepted; identical layout in light/dark for consistency."
+    image: "assets/pages/Home/CookingApp/Agreement.png"
