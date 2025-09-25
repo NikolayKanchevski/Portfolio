@@ -14,54 +14,72 @@ skills:
 
   - name: OpenGL
     icon: https://cdn.simpleicons.org/opengl
-    percentage: 85
+    percentage: 60
     tooltip: ""
     website: https://www.khronos.org/opengl/
 
-  - name: Flask
-    icon: https://cdn.simpleicons.org/flask
+  - name: OpenGL ES
+    icon: https://cdn.simpleicons.org/opengl
     percentage: 40
     tooltip: ""
-    website: https://flask.palletsprojects.com/
+    website: https://www.khronos.org/opengl/
 
-  - name: ASP.NET
-    icon: https://cdn.simpleicons.org/dotnet
-    percentage: 55
-    tooltip: ""
-    website: https://dotnet.microsoft.com/apps/aspnet
-
-  - name: Avalonia
-    icon: https://cdn.simpleicons.org/avaloniaui
+  - name: Android SDK
+    icon: https://cdn.simpleicons.org/android
     percentage: 60
     tooltip: ""
-    website: https://avaloniaui.net/
+    website: https://www.android.com
 
-  - name: ML.NET
-    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
-    percentage: 30
-    tooltip: ""
-    website: https://dotnet.microsoft.com/en-us/apps/ai/ml-dotnet
-
-  - name: OpenXML
-    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
-    percentage: 50
-    tooltip: ""
-    website: https://openxmlsdk.org/
-
-  - name: Apple
+  - name: Cocoa & UIKit
     icon: https://cdn.simpleicons.org/apple/white
     percentage: 70
     tooltip: ""
     website: https://www.apple.com
 
+  - name: Flask
+    icon: https://cdn.simpleicons.org/flask
+    percentage: 60
+    tooltip: ""
+    website: https://flask.palletsprojects.com/
+
+  - name: ML.NET
+    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
+    percentage: 60
+    tooltip: ""
+    website: https://dotnet.microsoft.com/en-us/apps/ai/ml-dotnet
+
+  - name: Avalonia
+    icon: https://cdn.simpleicons.org/avaloniaui
+    percentage: 50
+    tooltip: ""
+    website: https://avaloniaui.net/
+
+  - name: ASP.NET
+    icon: https://cdn.simpleicons.org/dotnet
+    percentage: 45
+    tooltip: ""
+    website: https://dotnet.microsoft.com/apps/aspnet
+
+  - name: ML.NET
+    icon: https://learn.microsoft.com/en-us/media/logos/logo_net.svg
+    percentage: 60
+    tooltip: ""
+    website: https://dotnet.microsoft.com/en-us/apps/ai/ml-dotnet
+
+  - name: Avalonia
+    icon: https://cdn.simpleicons.org/avaloniaui
+    percentage: 50
+    tooltip: ""
+    website: https://avaloniaui.net/
+
   - name: Steamworks
     icon: https://cdn.simpleicons.org/steamworks/white
-    percentage: 60
+    percentage: 40
     tooltip: ""
     website: https://partner.steamgames.com/
 
   - name: Discord API
     icon: https://cdn.simpleicons.org/discord
-    percentage: 70
+    percentage: 90
     tooltip: ""
     website: https://discord.com/developers

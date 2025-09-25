@@ -1,23 +1,39 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    --primary-color: red;
-    --accent-color: red;
-    --background-color: red;
-    --border-color: red;
-    --contrast-color: red;
-    --theme-color: red;
-  }
+@mixin light-theme-colors {
+  --primary-color: #FFA500FF;
+  --accent-color: #7c7c7c;
+  --background-color: #fdfdfd;
+  --border-color: #dedede;
+  --contrast-color: #3c68ed;
+  --theme-color: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+@mixin dark-theme-colors {
     --primary-color: #FFA500FF;
     --accent-color: #C3C3C5FF;
     --background-color: #151516FF;
     --border-color: #3E3E3EFF;
     --contrast-color: #FFFFFF;
     --theme-color: #000000FF;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include light-theme-colors;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-theme-colors;
+  }
+}
+
+[data-theme="light"] {
+  @include light-theme-colors;
+}
+
+[data-theme="dark"] {
+  @include dark-theme-colors;
 }
 
 /* --- BREAKPOINTS --- */
@@ -28,12 +44,12 @@ $xl-breakpoint: 1200px;
 $xxl-breakpoint: 1400px;
 
 /* --- DIMENSIONS --- */
-$h1-size: clamp(2rem, 8vw, 3.5rem);
-$h2-size: clamp(1.34rem, 5.36vw, 2.35rem);
-$h3-size: clamp(0.8978rem, 8vw, 1.57115rem);
-$h4-size: clamp(0.71824rem, 8vw, 1.25692rem);
-$h5-size: clamp(0.57459rem, 8vw, 1.00554rem);
-$h6-size: clamp(0.45967rem, 8vw, 0.80443rem);
+$h1-size: clamp(2rem, 8vw, 2.8rem);
+$h2-size: clamp(1.34rem, 5.36vw, 1.88rem);
+$h3-size: clamp(0.8978rem, 8vw, 1.25692rem);
+$h4-size: clamp(0.71824rem, 8vw, 1.00554rem);
+$h5-size: clamp(0.57459rem, 8vw, 0.80443rem);
+$h6-size: clamp(0.45967rem, 8vw, 0.64354rem);
 
 $border-width: 2px;
 $border-radius: 1rem;
@@ -161,6 +177,7 @@ strong {
 
 p,
 li {
+  font-size: 1rem;
   font-family: $accent-text-font;
   color: $accent-color;
 }
@@ -182,52 +199,6 @@ button {
   background-color: red !important;
 }
 
-.gslide {
-  scale: 0.8;
-
-  .gslide-media img {
-    border: $border;
-    border-bottom: none;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-    background-color: $contrast-color;
-    padding: 2rem;
-    object-fit: contain;
-  }
-
-  .gslide-media {
-    margin: 0 !important;
-  }
-
-  .gdesc-open .gslide-media {
-    opacity: 1 !important;
-  }
-
-  .glightbox-clean .gslide-media {
-    box-shadow: none !important;
-  }
-
-  .gslide-title {
-    margin-bottom: 0.5rem;
-  }
-
-  .gslide-description {
-    display: block !important;
-    position: relative !important;
-    flex: none !important;
-    padding: 0 !important;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-    background-color: $background-color;
-    border: $border;
-
-    p {
-      max-height: 30vh !important;
-      overflow: scroll;
-    }
-  }
-}
-
 .glitch-wrapper {
    width: 100%;
    height: 100%;
@@ -241,7 +212,6 @@ button {
    position: relative;
    font-weight: 700;
    line-height: 1.2;
-   color: #fff;
    z-index: 1;
 }
 
@@ -441,4 +411,50 @@ button {
    100% {
       clip: rect(67px, 9999px, 122px, 0);
    }
+}
+
+.gslide {
+  scale: 0.8;
+
+  .gslide-media {
+    opacity: 1 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+
+    img {
+      border: $border;
+      border-bottom: none;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      [data-theme="light"] & {
+        background-color: $background-color;
+      }
+      [data-theme="dark"] & {
+        background-color: $contrast-color;
+      }
+      padding: 2rem;
+      object-fit: contain;
+    }
+  }
+
+  .gslide-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .gslide-description {
+    display: block !important;
+    position: relative !important;
+    flex: none !important;
+    padding: 0 !important;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    background: $background-color none !important;
+    border: $border;
+
+    p {
+      max-height: 30vh !important;
+      overflow: scroll;
+    }
+  }
 }

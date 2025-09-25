@@ -2,6 +2,7 @@ import os
 
 import yaml
 from flask import Blueprint
+from datetime import date
 
 from src.Core.Page import *
 from src.Models.Home.Skills import *
@@ -101,15 +102,18 @@ def create_recommendation_manager(recommendations_directory_path: str) -> Recomm
 @homeBlueprint.route('/')
 @homeBlueprint.route('/Home/')
 def home() -> str:
-    page: Page = Page('pages/Home/home.html', 'Home')
+    page: Page = Page('pages/Home/home.html', 'Portfolio - Home')
 
-    skillManager: SkillManager = create_skill_manager(f'{ page.data_directory }/Skills/')
+    age: int = datetime.date.today().year - 2007 - ((date.today().day, date.today().month) < (8, 7))
+    page.add_value('age', age)
+
+    skillManager: SkillManager = create_skill_manager(f'{ page.data_directory_path }/Skills/')
     page.add_value('skillManager', skillManager)
 
-    itemManager: ItemManager = create_item_manager(f'{ page.data_directory }/Items/')
+    itemManager: ItemManager = create_item_manager(f'{ page.data_directory_path }/Items/')
     page.add_value('itemManager', itemManager)
 
-    recommendationManager: RecommendationManager = create_recommendation_manager(f'{ page.data_directory }/Recommendations/')
+    recommendationManager: RecommendationManager = create_recommendation_manager(f'{ page.data_directory_path }/Recommendations/')
     page.add_value('recommendationManager', recommendationManager)
 
     return page.render_template

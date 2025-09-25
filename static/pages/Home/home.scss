@@ -42,6 +42,9 @@
     height: 100vh;
     opacity: 0;
     background-color: rgba(black, 0.75);
+    [data-theme="light"] & {
+      background-color: rgba(white, 0.55);
+    }
     transition: opacity 0.35s ease-in-out;
     z-index: 9990;
   }
@@ -76,6 +79,7 @@
       color: $contrast-color;
       text-shadow: 0 0 1rem $contrast-color;
       transition: $default-transition-duration;
+      white-space: nowrap;
 
       &:hover {
         text-decoration: none !important;
@@ -143,7 +147,6 @@ footer {
 
       &:hover {
         scale: 1.1;
-        text-shadow: 0 0 1rem $primary-color;
       }
     }
   }
@@ -180,7 +183,9 @@ section {
     h2 {
       position: relative;
       padding-bottom: 1rem;
-      text-shadow: 0 0 1rem $contrast-color;
+      [data-theme="dark"] & {
+        text-shadow: 0 0 1rem $contrast-color;
+      }
 
       &:before {
         content: "";
@@ -200,9 +205,9 @@ section {
 }
 
 @function star-shadow($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  $value: '#{random(2000)}px #{random(2000)}px #{$contrast-color}';
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #{$contrast-color}';
   }
 
   @return unquote($value);
@@ -244,7 +249,10 @@ $star-shadow-3: star-shadow(100);
   position: relative;
   width: 100%;
   min-height: 100vh !important;
-  background: $theme-color;
+  background-color: $theme-color;
+  [data-theme="light"] & {
+    background-color: $background-color;
+  }
   align-items: center;
 
   .Background {
@@ -271,7 +279,9 @@ $star-shadow-3: star-shadow(100);
 
   .Title {
     white-space: nowrap;
-    text-shadow: 0 0 1rem $contrast-color;
+    [data-theme="dark"] & {
+      text-shadow: 0 0 1rem $contrast-color
+    }
   }
 
   .Subtitle {
@@ -291,6 +301,9 @@ $star-shadow-3: star-shadow(100);
     border: 0.4rem solid $border-color;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 1rem 0 $contrast-color;
+    [data-theme="light"] & {
+      box-shadow: 0.3rem 0.3rem 1rem 0 black;
+    }
     aspect-ratio: 1;
     object-fit: cover;
   }
@@ -314,7 +327,7 @@ $star-shadow-3: star-shadow(100);
     }
 
     .Note {
-      display: flex;
+      display: inline-flex;
       height: 100%;
       align-items: center;
       vertical-align: center;
@@ -421,6 +434,9 @@ $star-shadow-3: star-shadow(100);
           border-radius: 0.5rem;
           padding: 1.5rem;
           transition: $default-transition;
+          [data-theme="light"] & {
+            background-color: $accent-color;
+          }
 
           &:hover {
             scale: 1.05;
@@ -501,7 +517,7 @@ $star-shadow-3: star-shadow(100);
         }
 
         p {
-          font-size: $h5-size;
+          //font-size: $h5-size;
           margin-bottom: 0.1rem;
         }
 
@@ -559,7 +575,9 @@ $star-shadow-3: star-shadow(100);
 
       &:hover {
         scale: 1.05;
-        text-shadow: 0 0 1rem $contrast-color;
+        [data-theme="dark"] & {
+          text-shadow: 0 0 1rem $contrast-color;
+        }
       }
 
       &.active {
@@ -620,15 +638,18 @@ $star-shadow-3: star-shadow(100);
       border: $border;
       margin: 0 auto;
       aspect-ratio: 1;
-      object-fit: cover;
+      object-fit: contain;
+      min-width: 100%;
+      padding: 1rem;
     }
 
     .Content {
+      overflow: visible;
       margin-top: 0.25rem;
       display: grid;
       row-gap: 0.25rem;
-      border-left: 3px solid $contrast-color;
-      padding-left: 30px;
+      padding-left: 1rem;
+      border-left: 2px solid $contrast-color;
 
       .Name {
         margin-top: 1rem;
@@ -664,7 +685,6 @@ $star-shadow-3: star-shadow(100);
   }
 
   .swiper-pagination {
-    margin-top: 1rem;
     position: relative;
 
     .swiper-pagination-bullet {

@@ -8,7 +8,7 @@ skills:
 
   - name: Unreal Engine
     icon: https://cdn.simpleicons.org/unrealengine/white
-    percentage: 75
+    percentage: 15
     tooltip: ""
     website: https://www.unrealengine.com
 
@@ -20,7 +20,7 @@ skills:
 
   - name: CLion
     icon: https://resources.jetbrains.com/storage/products/clion/img/meta/clion_logo_300x300.png
-    percentage: 85
+    percentage: 95
     tooltip: ""
     website: https://www.jetbrains.com/clion/
 
@@ -32,31 +32,31 @@ skills:
 
   - name: Android Studio
     icon: https://cdn.simpleicons.org/androidstudio
-    percentage: 85
+    percentage: 75
     tooltip: ""
     website: https://developer.android.com/studio
 
   - name: IntelliJ IDEA
     icon: https://cdn.simpleicons.org/intellijidea
-    percentage: 80
+    percentage: 85
     tooltip: ""
     website: https://www.jetbrains.com/idea/
 
   - name: PyCharm
     icon: https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png
-    percentage: 70
+    percentage: 90
     tooltip: ""
     website: https://www.jetbrains.com/pycharm/
 
   - name: Visual Studio
     icon: https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg
-    percentage: 85
+    percentage: 80
     tooltip: ""
     website: https://visualstudio.microsoft.com/
 
   - name: Visual Studio Code
     icon: https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg
-    percentage: 95
+    percentage: 90
     tooltip: ""
     website: https://code.visualstudio.com/
 
@@ -74,7 +74,7 @@ skills:
 
   - name: After Effects
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/1024px-Adobe_After_Effects_CC_icon.svg.png?20210519030120
-    percentage: 50
+    percentage: 30
     tooltip: ""
     website: https://www.adobe.com/products/aftereffects.html
 
@@ -92,6 +92,6 @@ skills:
 
   - name: Blender
     icon: https://cdn.simpleicons.org/blender
-    percentage: 70
+    percentage: 30
     tooltip: ""
     website: https://www.blender.org/

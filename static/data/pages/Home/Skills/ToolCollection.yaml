@@ -8,19 +8,19 @@ skills:
 
   - name: GitBook
     icon: https://avatars.githubusercontent.com/u/7111340?s=200&v=4
-    percentage: 65
+    percentage: 95
     tooltip: ""
     website: https://www.gitbook.com
 
   - name: RenderDoc
     icon: https://upload.wikimedia.org/wikipedia/commons/9/93/RenderDoc_logo.svg
-    percentage: 60
+    percentage: 80
     tooltip: ""
     website: https://renderdoc.org
 
   - name: Trello
     icon: https://cdn.simpleicons.org/trello
-    percentage: 70
+    percentage: 85
     tooltip: ""
     website: https://trello.com
 
@@ -32,18 +32,18 @@ skills:
 
   - name: Gradle
     icon: https://cdn.simpleicons.org/gradle
-    percentage: 65
+    percentage: 40
     tooltip: ""
     website: https://gradle.org
 
   - name: NuGet
     icon: https://cdn.simpleicons.org/nuget
-    percentage: 60
+    percentage: 80
     tooltip: ""
     website: https://www.nuget.org
 
   - name: vcpkg
     icon: https://vcpkg.io/assets/mark/mark.svg
-    percentage: 50
+    percentage: 80
     tooltip: ""
     website: https://vcpkg.io

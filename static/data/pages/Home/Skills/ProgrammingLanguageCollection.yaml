@@ -14,7 +14,7 @@ skills:
 
   - name: C
     icon: https://cdn.simpleicons.org/c
-    percentage: 80
+    percentage: 75
     tooltip: ""
     website: https://www.open-std.org/jtc1/sc22/wg14/
 
@@ -32,7 +32,7 @@ skills:
 
   - name: MetalSL
     icon: https://upload.wikimedia.org/wikipedia/commons/5/5e/Apple_Metal_logo%2C_version_2.svg
-    percentage: 70
+    percentage: 40
     tooltip: ""
     website: https://developer.apple.com/metal/
 
@@ -50,36 +50,24 @@ skills:
 
   - name: JavaScript
     icon: https://cdn.simpleicons.org/javascript
-    percentage: 65
+    percentage: 60
     tooltip: ""
     website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
   - name: Swift
     icon: https://cdn.simpleicons.org/swift
-    percentage: 55
+    percentage: 50
     tooltip: ""
     website: https://developer.apple.com/swift/
 
   - name: Kotlin
     icon: https://cdn.simpleicons.org/kotlin
-    percentage: 45
+    percentage: 35
     tooltip: ""
     website: https://kotlinlang.org
 
   - name: PHP
     icon: https://cdn.simpleicons.org/php
-    percentage: 50
+    percentage: 45
     tooltip: ""
     website: https://www.php.net
-
-  - name: MySQL
-    icon: https://cdn.simpleicons.org/mysql
-    percentage: 30
-    tooltip: ""
-    website: https://www.mysql.com
-
-  - name: Assembly
-    icon: https://www.svgrepo.com/show/373445/assembly.svg
-    percentage: 10
-    tooltip: ""
-    website: https://www.asmcommunity.net

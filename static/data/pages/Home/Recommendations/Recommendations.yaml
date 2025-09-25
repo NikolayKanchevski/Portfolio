@@ -1,5 +1,11 @@
 recommendations:
-  - name: "Urbаn Impаct Venturеs"
+  - name: "Lexoro"
+    occupation: "LLC Company"
+    image: "assets/pages/Home/Recommendations/LexoroLogo.svg"
+    text: "We at Lexoro had the pleasure of working with Nikolay during his internship, and we were deeply impressed by his professionalism, creativity, and ability to adapt quickly to complex technical challenges. Despite his young age, he approached every task with maturity and curiosity, contributing valuable insights and innovative ideas that went beyond expectations. His dedication and eagerness to learn made him stand out as not only a promising software engineer but also as a reliable collaborator who elevated the team around him. We are confident that Nikolay has an exceptional future ahead in the field of technology and innovation."
+    star_count: 5
+
+  - name: "Urban Impact Ventures"
     occupation: "LLC Company"
     image: "assets/pages/Home/Recommendations/UrbanImpactVenturesLogo.jpeg"
     text: "The platform provided a simple yet powerful proof of concept that clearly demonstrated the value of our idea. Its intuitive interface and core functionality allowed us to validate key assumptions quickly and gather essential user feedback. Building on this foundation, we were able to develop a robust MVP that addressed real user needs and set the stage for future growth. The proof of concept was instrumental in shaping our product vision and accelerating our development process."

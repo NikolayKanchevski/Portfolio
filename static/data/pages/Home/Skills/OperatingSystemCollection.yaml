@@ -1,10 +1,28 @@
 name: "Operating Systems"
 skills:
-  - name: Windows
+  - name: Windows 10
     icon: https://www.svgrepo.com/show/303223/microsoft-windows-22-logo.svg
-    percentage: 80
+    percentage: 85
     tooltip: ""
     website: https://www.microsoft.com/windows
+
+  - name: Windows 7
+    icon: https://upload.wikimedia.org/wikipedia/de/c/c2/Microsoft_Windows_7_logo.svg
+    percentage: 55
+    tooltip: ""
+    website: https://www.microsoft.com/windows
+
+  - name: Manjaro Linux
+    icon: https://cdn.simpleicons.org/manjaro
+    percentage: 65
+    tooltip: ""
+    website: https://manjaro.org
+
+  - name: Android
+    icon: https://cdn.simpleicons.org/android
+    percentage: 85
+    tooltip: ""
+    website: https://www.android.com
 
   - name: macOS
     icon: https://cdn.simpleicons.org/macos/white
@@ -12,26 +30,8 @@ skills:
     tooltip: ""
     website: https://www.apple.com/macos
 
-  - name: Manjaro Linux
-    icon: https://cdn.simpleicons.org/manjaro
-    percentage: 95
-    tooltip: ""
-    website: https://manjaro.org
-
-  - name: Kali Linux
-    icon: https://cdn.simpleicons.org/kalilinux
-    percentage: 40
-    tooltip: ""
-    website: https://www.kali.org
-
-  - name: Android
-    icon: https://cdn.simpleicons.org/android
-    percentage: 75
-    tooltip: ""
-    website: https://www.android.com
-
   - name: iOS
     icon: https://cdn.simpleicons.org/iOS/white
-    percentage: 90
+    percentage: 85
     tooltip: ""
     website: https://www.apple.com/ios
